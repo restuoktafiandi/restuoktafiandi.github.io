@@ -295,6 +295,11 @@ body {
         color: white;
     }
 
+    #hamburger-menu:active, #close-menu:active {
+        transform: rotate(150deg);
+        transition: all 1s ease;
+    }
+
     #close-menu {
         display: none;
     }
