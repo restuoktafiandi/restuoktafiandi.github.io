@@ -1,0 +1,347 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --black: #100720;
+    --pink: #FA2FB5;
+    --purple: #31087B;
+    --yellow: #FFC23C;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--black);
+    color: white;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.header {
+    align-items: center;
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 15px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.header__nav {
+    width: 400px;
+}
+
+.hader__nav-menu {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header__nav-list {
+    list-style: none;
+}
+
+.header__nav-link {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.header___picture-logo {
+    height: 35px;
+    width: 35px;
+}
+
+/* theme-icon */
+.header__icon-theme {
+    cursor: pointer;
+    width: 24px;
+}
+
+#darkIcon {
+    color: white;
+    display: none;
+}
+
+#lightIcon {
+    color: var(--yellow);
+    display: block;
+}
+
+.light-mode {
+    background-color: white;
+    color: var(--black);
+    transition: all 0.5s ease-in-out;
+}
+
+.menu {
+    display: none;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+}
+
+.hero__box-title {
+    font-size: 50px;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero__subhero {
+    color: var(--yellow);
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.hero__btn {
+    background-color: var(--purple);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+    margin-top: 80px;
+    width: 250px;
+}
+
+.hero__btn:hover {
+    background-color: #440cac;
+}
+
+.tentang {
+    padding-top: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+.tentang__profile {
+    width: 200px;
+}
+
+.tentang__profile-title,
+.tentang__alat-title,
+.project__title {
+    font-size: 32px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.tentang__deskripsi {
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.tentang__icon-contact {
+    align-items: center;
+    border: 2px solid var(--yellow);
+    display: flex;
+    height: 70px;
+    justify-content: space-around;
+    margin: 20px auto 100px;
+    padding: 0 30px;
+    width: 300px;
+}
+
+.icon-link {
+    color: white;
+}
+
+.icon-link:hover {
+    color: rgb(219, 218, 218);
+    rotate: 20deg;
+    transition: .7s ease;
+    translate: 0px -5px;
+}
+
+.tentang__box-icon-pemrograman {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 50px auto;
+    padding: 0px 30px;
+    row-gap: 30px;
+    width: 60%;
+}
+
+.box-html,
+.box-css,
+.box-javaScript,
+.box-figma,
+.box-git,
+.box-github,
+.box-windows {
+    align-items: center;
+    border: 2px solid var(--purple);
+    column-gap: 10px;
+    display: flex;
+    height: 60px;
+    padding: 10px;
+    width: 200px;
+}
+
+.project {
+    padding-bottom: 100px;
+    padding-top: 100px;
+    width: 100%;
+}
+
+.project__box-project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 50px auto;
+    row-gap: 20px;
+    width: 60%;
+}
+
+.project_1,
+.project_2 {
+    background-color: var(--yellow);
+    border-radius: 8px;
+    height: 200px;
+    padding: 10px;
+    width: 300px;
+}
+
+.project_1 p,
+.project_2 p {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.project__box-project a {
+    text-decoration: none;
+}
+
+.footer {
+    background-color: var(--purple);
+    border-top: 2px solid var(--yellow);
+    height: 80px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.reveal {
+    opacity: 0;
+    position: relative;
+    transform: translateY(150px);
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 700px) {
+    close-menu:active {
+        transform: rotate(270deg);
+        transition: all 1s ease;
+    }
+
+    hamburger-menu:active,
+
+    .hero__title {
+        font-size: 60px;
+    }
+
+    .hero__subhero {
+        font-size: 30px;
+    }
+
+    .header__nav {
+        width: unset;
+    }
+
+    .hader__nav-menu {
+        background-color: var(--black);
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        padding-bottom: 200px;
+        position: absolute;
+        right: -100%;
+        top: 70px;
+        transition: all 0.3s ease;
+        width: 70%;
+        z-index: -1;
+    }
+
+    .menu {
+        cursor: pointer;
+        display: block;
+    }
+
+    #hamburger-menu,
+    #close-menu {
+        color: white;
+    }
+
+    #close-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 360px) {
+    main {
+        padding: 0px 20px;
+    }
+
+    .hero__title {
+        font-size: 45px;
+    }
+
+    .hero__subhero {
+        font-size: 20px;
+    }
+
+    .hero__btn {
+        margin-top: 150px;
+    }
+
+    .tentang__profile {
+        width: 150px;
+    }
+
+    .tentang__icon-contact {
+        width: 220px;
+    }
+
+    .tentang__box-icon-pemrograman {
+        padding: 0px 5px;
+    }
+
+    .tentang__profile-title,
+    .tentang__alat-title,
+    .project__title {
+        font-size: 24px;
+    }
+
+    .project_1,
+    .project_2 {
+        width: 250px;
+    }
+
+    .project__picture-1,
+    .project__picture-2 {
+        width: 230px;
+    }
+}

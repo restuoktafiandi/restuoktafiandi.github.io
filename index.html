@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./assets/picture.png">
+    <link rel="stylesheet" href="./assets/styles.css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+    <title>Restu Oktafiandi</title>
+</head>
+
+<body>
+    <header class="header">
+        <img src="./assets/picture.png" alt="picture-logo" class="header___picture-logo">
+
+        <nav class="header__nav">
+            <ul class="hader__nav-menu">
+                <li class="header__nav-list"><a href="#beranda" class="header__nav-link">Beranda</a></li>
+                <li class="header__nav-list"><a href="#tentang" class="header__nav-link">Tentang</a></li>
+                <li class="header__nav-list"><a href="#project" class="header__nav-link">Projek</a></li>
+                <div class="header__icon-theme" onclick="lightMode()">
+                    <i class="fa-solid fa-moon fa-lg" id="darkIcon"></i>
+                    <i class="fa-solid fa-sun fa-lg" id="lightIcon"></i>
+                </div>
+            </ul>
+            <div class="menu">
+                <i class="fa-solid fa-bars fa-xl" id="hamburger-menu"></i>
+                <i class="fa-solid fa-xmark fa-xl" id="close-menu"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" id="beranda">
+            <div class="hero__box-title">
+                <h1 class="hero__title">RESTU OKTAFIANDI</h1>
+                <p class="hero__subhero"><em>Frontend Web Developer</em></p>
+                <a href="#tentang"><input type="button" class="hero__btn" value="Tentang Saya"></a>
+            </div>
+        </section>
+        <section class="tentang" id="tentang">
+            <img src="./assets/picture.png" alt="foto-profile" class="tentang__profile">
+            <div class="reveal">
+                <h3 class="tentang__profile-title">Restu Oktafiandi</h3>
+                <p class="tentang__deskripsi">
+                    Saya adalah seorang siswa yang tertarik<br>
+                    di dunia teknologi pemrograman software.<br>
+                    Membantu orang dengan membuat projek software<br>
+                    yang berguna bagi semua orang.
+                </p>
+                <div class="tentang__icon-contact">
+                    <a href="https://www.instagram.com/restuoktafiandi?r=nametag" target="_blank" class="icon-link"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                    <a href="https://wa.me/qr/EPEO33S5IMQVF1" target="_blank" class="icon-link"><i class="fa-brands fa-whatsapp fa-xl"></i></a>
+                    <a href="https://github.com/restuoktafiandi" target="_blank" class="icon-link"><i class="fa-brands fa-github fa-xl"></i></a>
+                    <a href="mailto: restuoktafiandi@gmail.com" target="_blank" class="icon-link"><i class="fa-solid fa-envelope fa-xl"></i></a>
+                </div>
+            </div>
+            <br><br><br>
+            <h3 class="tentang__alat-title reveal">Alat dan Bahasa Pemrograman</h3>
+            <div class="tentang__box-icon-pemrograman reveal">
+                <div class="box-html">
+                    <iconify-icon icon="vscode-icons:file-type-html" width="40"></iconify-icon>
+                    <p>HTML</p>
+                </div>
+                <div class="box-css">
+                    <iconify-icon icon="vscode-icons:file-type-css" width="40"></iconify-icon>
+                    <p>CSS</p>
+                </div>
+                <div class="box-javaScript">
+                    <iconify-icon icon="logos:javascript" width="35"></iconify-icon>
+                    <p>JavaScript</p>
+                </div>
+                <div class="box-figma">
+                    <iconify-icon icon="logos:figma" width="25"></iconify-icon>
+                    <p>Figma</p>
+                </div>
+                <div class="box-git">
+                    <iconify-icon icon="logos:git-icon" width="40"></iconify-icon>
+                    <p>Git</p>
+                </div>
+                <div class="box-github">
+                    <iconify-icon icon="logos:github-octocat" width="40"></iconify-icon>
+                    <p>Github</p>
+                </div>
+                <div class="box-windows">
+                    <iconify-icon icon="logos:microsoft-windows" width="30"></iconify-icon>
+                    <p>Windows</p>
+                </div>
+            </div>
+        </section>
+        <section class="project" id="project">
+            <h3 class="project__title">Project</h3>
+            <div class="project__box-project reveal">
+                <a href="./assets/project/bookselfApp/index.html" target="_blank">
+                    <div class="project_1">
+                        <img src="./assets/project_1.png" alt="project_1" width="280px" class="project__picture-1">
+                        <p>BookShel App</p>
+                    </div>
+                </a>
+                <a href="./assets/project/digital_clock/index.html" target="_blank" >
+                    <div class="project_2">
+                        <img src="./assets/project_2.png" alt="project_2" width="280px" class="project__picture-1">
+                        <p>Digital Clock</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="kontak" id="kontak">
+
+        </section>
+    </main>
+    <footer class="footer">
+        <p><span>&copy;</span> 2022 - Restu Oktafiandi</p>
+    </footer>
+
+    <script src="./assets/script/main.js"></script>
+</body>
+
+</html>
