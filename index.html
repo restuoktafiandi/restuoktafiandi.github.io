@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="icon" href="./assets/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Restu Oktafiandi</title>
+</head>
+
+<body>
+    <header class="header">
+        <img class="header__logo" src="./assets/logo.png" alt="logo">
+        <nav class="nav">
+            <ul class="nav__menu">
+                <li class="nav__list"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav__list"><a class="nav-link" href="#project">Project</a></li>
+                <li class="nav__list"><a class="nav-link" href="#tentang">About</a></li>
+            </ul>
+        </nav>
+        <div class="hbg-menu" onclick="myToggle(this)">
+            <span class="hbg-menu__child1"></span>
+            <span class="hbg-menu__child2"></span>
+            <span class="hbg-menu__child3"></span>
+        </div>
+    </header>
+
+    <main>
+        <div class="box-iconcontact">
+            <a class="link-contact" href="https://www.linkedin.com/in/restuoktafiandi"><i
+                    class="fa-brands fa-linkedin-in fa-xl"></i></a>
+            <a class="link-contact" href="https://www.instagram.com/restuoktafiandi?r=nametag" target="_blank"><i
+                    class="fa-brands fa-instagram fa-xl"></i></a>
+            <a class="link-contact" href="https://github.com/restuoktafiandi" target="_blank"><i
+                    class="fa-brands fa-github fa-xl"></i></a>
+            <a class="link-contact" href="mailto: restuoktafiandi@gmail.com" target="_blank"><i
+                    class="fa-regular fa-envelope fa-xl"></i></a>
+        </div>
+        <section class="section-hero" id="home">
+            <div class="box-writing">
+                <h1 class="box-writing__title1"><span style="color:#00ADB5">R</span>ESTU</h1>
+                <h2 class="box-writing__title2"><span style="color:#00ADB5">O</span>KTAFIANDI</h2>
+                <P class="box-writing__dec">
+                    I am a student who enjoys<br>
+                    programming and aspires<br>
+                    to create useful projects<br>
+                    for everyone.
+                </P>
+                <a href="#project"><input class="box-writing__btn-project" type="button" value="My Project"></a>
+            </div>
+            <div class="box-img">
+                <img class="box-img__img-hero" src="./assets/foto.png" alt="picture-hero">
+            </div>
+        </section>
+
+        <section class="tentang" id="tentang">
+            <!-- <img src="./assets/foto2.png" alt="foto-profile" class="tentang__profile"> -->
+            <div class="reveal">
+                <h3 class="tentang__profile-title">Restu Oktafiandi</h3>
+                <p class="tentang__deskripsi">
+                    Saya adalah seorang siswa yang tertarik
+                    di dunia teknologi pemrograman software.
+                    Membantu orang dengan membuat projek software
+                    yang berguna bagi semua orang.
+                </p>
+            </div>
+            <br><br><br>
+            <h3 class="tentang__alat-title">Alat dan Bahasa Pemrograman</h3>
+            <div class="tentang__box-icon-pemrograman">
+                <div class="box-html">
+                    <iconify-icon icon="vscode-icons:file-type-html" width="40"></iconify-icon>
+                    <p>HTML</p>
+                </div>
+                <div class="box-css">
+                    <iconify-icon icon="vscode-icons:file-type-css" width="40"></iconify-icon>
+                    <p>CSS</p>
+                </div>
+                <div class="box-javaScript">
+                    <iconify-icon icon="logos:javascript" width="35"></iconify-icon>
+                    <p>JavaScript</p>
+                </div>
+                <div class="box-figma">
+                    <iconify-icon icon="logos:figma" width="25"></iconify-icon>
+                    <p>Figma</p>
+                </div>
+                <div class="box-git">
+                    <iconify-icon icon="logos:git-icon" width="40"></iconify-icon>
+                    <p>Git</p>
+                </div>
+                <div class="box-github">
+                    <iconify-icon icon="logos:github-octocat" width="40"></iconify-icon>
+                    <p>Github</p>
+                </div>
+                <div class="box-windows">
+                    <iconify-icon icon="logos:microsoft-windows" width="30"></iconify-icon>
+                    <p>Windows</p>
+                </div>
+            </div>
+        </section>
+        <section class="project" id="project">
+            <h3 class="project__title">Project</h3>
+            <div class="project__box-project reveal">
+                <a href="./assets/project/bookselfApp/index.html" target="_blank">
+                    <div class="project_1">
+                        <img src="./assets/project_1.png" alt="project_1" width="280px" class="project__picture-1">
+                        <p>BookShel App</p>
+                    </div>
+                </a>
+                <a href="./assets/project/digital_clock/index.html" target="_blank" >
+                    <div class="project_2">
+                        <img src="./assets/project_2.png" alt="project_2" width="280px" class="project__picture-1">
+                        <p>Digital Clock</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><span>&copy;</span> 2023 - Restu Oktafiandi</p>
+    </footer>
+
+    <script src="./assets/script/main.js"></script>
+</body>
+
+</html>
