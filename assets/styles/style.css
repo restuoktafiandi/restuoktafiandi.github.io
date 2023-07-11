@@ -277,7 +277,8 @@ main {
 }
 
 .project_1,
-.project_2 {
+.project_2,
+.project_3 {
     background-color: var(--gray-old);
     border-radius: 8px;
     height: 200px;
@@ -286,7 +287,8 @@ main {
 }
 
 .project_1 p,
-.project_2 p {
+.project_2 p,
+.project_3 p {
     color: var(--my-white);
     font-size: 20px;
     font-weight: bold;
